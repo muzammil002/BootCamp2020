@@ -38,4 +38,4 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./build muzammilproject.surge.sh --token ${{Surge_token}}
+      run: surge ./build muzammilproject.surge.sh --token ${{SURGE_TOKEN}}
