@@ -28,7 +28,7 @@ jobs:
         node-version: 12
 
         
-    - name: Installing surge
+    -name: Installing surge
       run: npm install --global surge
 
     -name: deploying using surge
