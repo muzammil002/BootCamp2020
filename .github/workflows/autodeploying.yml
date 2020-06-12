@@ -26,10 +26,8 @@ jobs:
       run: actions/setup-node@v2-beta
       with:
         node-version: 12
-
-    # Runs a set of commands using the runners shell
-    - name:installing surge 
+    - name: Installing surge 
       run: npm install --global surge
         
-    name:deploying using surge
-    run:surge ./ muzammilproject.surge.sh --token {{ secrets.SURGE_TOKEN }}
+    -name: deploying using surge
+    run: surge ./ muzammilproject.surge.sh --token {{ secrets.SURGE_TOKEN }}
